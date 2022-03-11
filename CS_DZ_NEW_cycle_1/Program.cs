@@ -11,17 +11,20 @@ namespace CS_DZ_NEW_cycle_1
         static void Main(string[] args)
         {
             int countNumbers = 0;
-            int N;
+            int intervalNumbers;
+            int IntervalStart = 1;
+            int IntervalEnd = 27;
+            int countSingleNumbers = 9;
 
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i <= countSingleNumbers; i++)
             {
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j <= countSingleNumbers; j++)
                 {
-                    for (int k = 0; k < 10; k++)
+                    for (int k = 0; k <= countSingleNumbers; k++)
                     {
-                        N = i + j + k;
+                        intervalNumbers = i + j + k;
 
-                        if (N >= 1 && N <= 27)
+                        if (intervalNumbers >= IntervalStart && intervalNumbers <= IntervalEnd)
                         {
                             countNumbers++;
                         }
